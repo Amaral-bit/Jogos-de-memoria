@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-jogo">
+        <div class="cabecalho">
+            <h1>Jogo da Memória</h1>
+            <div id="controlesinicio" class="controles">
+                <label for="dificuldade">Nível:</label>
+                <select id="dificuldade">
+                    <option value="">Selecionar</option>
+                    <option value="facil">Fácil (4x4)</option>
+                    <option value="medio">Médio (6x6)</option>
+                    <option value="dificil">Difícil (8x8)</option>
+                </select>
+                <button id="botaoIniciar">Iniciar Jogo</button>
+            </div>
+            <div id="controlesJogando" style="display: none;">
+                <div class="temporizador">Tempo: <span id="tempo">0</span> segundos</div>
+                <button id="botaoParar" class="">Parar Jogo</button>
+            </div>
+        </div>
+        <div id="tabuleiroJogo" class="tabuleiro-jogo"></div>
+    </div>
+    <script src="script.js"></script>
+
+    <audio id="somParCorreto" src="media/mixkit-winning-notification-2018.wav"></audio>
+    <audio id="somErro" src="media/mixkit-wrong-long-buzzer-954.wav"></audio>
+</body>
+</html>
